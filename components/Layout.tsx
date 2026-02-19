@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Icons, HUBS } from '../constants';
 
@@ -38,7 +37,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', path: '#' },
+    { name: 'Home', path: 'https://northmsnotary.com' },
     { name: 'Services', path: '#services' },
     { name: 'Regional Network', path: '#network' },
     { name: 'Knowledge Vault', path: 'https://faq.northmsnotary.com' },
@@ -72,7 +71,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-700 ${scrolled ? 'translate-y-8' : 'translate-y-12'} px-4`}>
         <div className={`max-w-7xl mx-auto rounded-[1.5rem] border border-white/5 transition-all duration-700 ${scrolled ? 'bg-[#0a192f]/90 backdrop-blur-2xl py-4 shadow-2xl' : 'bg-transparent py-6'}`}>
           <div className="px-8 flex justify-between items-center">
-            <a href="#" className="flex flex-col text-left group">
+            <a href="https://northmsnotary.com" className="flex flex-col text-left group">
               <span className="font-cinzel font-black text-xl md:text-2xl tracking-tighter text-[#d4af37] leading-none uppercase group-hover:text-white transition-all duration-500">THE NORTH MS NOTARY</span>
               <span className="text-[9px] uppercase tracking-[0.5em] text-gray-500 font-bold mt-1 group-hover:text-[#d4af37] transition-colors">MOBILE BUREAU UNIT</span>
             </a>
@@ -94,7 +93,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <a href="https://faq.northmsnotary.com" className="border border-[#d4af37]/40 text-[#d4af37] px-5 py-2.5 rounded-full font-black text-[9px] tracking-[0.2em] uppercase hover:bg-[#d4af37] hover:text-[#0a192f] transition shadow-lg">
                   FAQs
                 </a>
-                <a href="tel:6013278333" className="bg-[#d4af37] text-[#0a192f] px-6 py-3 rounded-full font-black text-[10px] tracking-widest uppercase hover:scale-105 transition shadow-xl hover:shadow-[#d4af37]/20">
+                <a href="https://contact.northmsnotary.com" className="bg-[#d4af37] text-[#0a192f] px-6 py-3 rounded-full font-black text-[10px] tracking-widest uppercase hover:scale-105 transition shadow-xl hover:shadow-[#d4af37]/20">
                   Direct Dispatch
                 </a>
               </div>
@@ -123,7 +122,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               </a>
             ))}
             <a href="https://faq.northmsnotary.com" onClick={() => setIsMenuOpen(false)} className="block w-full text-center border border-[#d4af37] text-[#d4af37] py-3 rounded-2xl font-black uppercase tracking-widest text-xs">Knowledge Vault</a>
-            <a href="tel:6013278333" className="block w-full text-center bg-[#d4af37] text-[#0a192f] py-4 rounded-2xl font-black uppercase tracking-widest text-xs">Direct Call</a>
+            <a href="https://contact.northmsnotary.com" onClick={() => setIsMenuOpen(false)} className="block w-full text-center bg-[#d4af37] text-[#0a192f] py-4 rounded-2xl font-black uppercase tracking-widest text-xs">Direct Dispatch</a>
           </div>
         )}
       </nav>
