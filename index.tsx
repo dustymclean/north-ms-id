@@ -1,4 +1,4 @@
-import './index.css'; // Critical for the PostCSS/Tailwind build
+import './index.css'; // This must be the first line
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
