@@ -1,0 +1,7 @@
+{
+  "name": "North MS Notary Bureau - Digital Node",
+  "description": "An ultra-advanced, SEO-engineered digital business card and logistics hub for North Mississippi Notary services, featuring 3D interactions and deep geographic indexing.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
